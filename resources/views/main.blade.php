@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <li class="notification-unread">
+                                        <i class="fal fa-bell-unread">
                                             <a href="javascript:void()">
                                                 <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
                                                 <div class="notification-content">
@@ -67,27 +67,7 @@
                                                     <div class="notification-text">Hi fanny...</div>
                                                 </div>
                                             </a>
-                                        </li>
-                                        <li class="notification-unread">
-                                            <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/2.jpg" alt="">
-                                                <div class="notification-content">
-                                                    <div class="notification-heading">Wafiq</div>
-                                                    <div class="notification-timestamp">08 Hours ago</div>
-                                                    <div class="notification-text">Can you do me a favour?</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/3.jpg" alt="">
-                                                <div class="notification-content">
-                                                    <div class="notification-heading">Azizah</div>
-                                                    <div class="notification-timestamp">08 Hours ago</div>
-                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                        </i>
                                     </ul>   
                                 </div>
                             </div>
