@@ -16,7 +16,12 @@
     "postcss": "^8.1.14"
   },
   "dependencies": {
-    "moment": "^2.29.1"
+    "@heroku/buildpack-registry": "^1.0.1",
+    "async-file": "^2.0.2",
+    "cli-ux": "^6.0.6",
+    "got": "^12.0.0",
+    "moment": "^2.29.1",
+    "phoenix": "^1.6.5"
   },
   "name": "cobadashboard",
   "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\"></a></p>",
