@@ -189,7 +189,7 @@
                     </li>
                     <li>
                         <a class="has-arrow" href="{{url("realtime")}}" aria-expanded="false">
-                            <i class="fal fa-sort-circle"></i><span class="nav-text">Other</span>
+                            <i class="fal fa-sign-out-alt"></i><span class="nav-text">Data Realtime BTS</span>
                         </a>
                     </li>
                     <li>
