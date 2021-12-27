@@ -27,7 +27,7 @@
     <div id="main-wrapper">
         <div class="nav-header">
             <div class="brand-logo">
-                <a href="index.html">
+                <a href="{{url("home")}}">
                     <b class="logo-abbr"><img src="{{secure_asset('style/images/favicon.png')}}" alt=""> </b>
                     <!-- <span class="logo-compact"><img src="{{secure_asset('style/images/logo-compact.png')}}" alt=""></span> -->
                     <span class="brand-title">
@@ -40,13 +40,13 @@
             <div class="header-content clearfix">
                 <div class="nav-control">
                     <div class="hamburger">
-                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                        <span class="toggle-icon"><i class="far fa-ellipsis-h-alt"></i></span>
                     </div>
                 </div>
                 <div class="header-right">
                     <ul class="clearfix">
                         <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
-                                <i class="mdi mdi-email-outline"></i>
+                                <i class="far fa-envelope"></i>
                                 <span class="badge badge-pill gradient-1">3</span>
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu">
@@ -187,11 +187,7 @@
                             <i class="fal fa-tachometer-alt-slowest"></i><span class="nav-text">Data Realtime BTS</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="has-arrow" aria-expanded="false">
-                            <i class="fal fa-box-open"></i><span class="nav-text">Other</span>
-                        </a>
-                    </li>
+                    <center><li class="nav-label">Lainnya</li></center>
                     <li>
                         <a class="has-arrow" aria-expanded="false">
                             <i class="fal fa-box-open"></i><span class="nav-text">Other</span>
