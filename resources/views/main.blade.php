@@ -188,7 +188,12 @@
                         </a>
                     </li>
                     <li>
-                        <a class="has-arrow" href="" aria-expanded="false">
+                        <a class="has-arrow" aria-expanded="false">
+                            <i class="fal fa-box-open"></i><span class="nav-text">Other</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" aria-expanded="false">
                             <i class="fal fa-box-open"></i><span class="nav-text">Other</span>
                         </a>
                         <ul aria-expanded="false">
