@@ -179,7 +179,7 @@
                     </li>
                     <li>
                         <a class="has-arrow" href="{{url("shelter")}}" aria-expanded="false">
-                            <i class="far fa-map-marker-alt"></i><span class="nav-text">Data Shelter BTS</span>
+                            <i class="fal fa-map-marker-alt"></i><span class="nav-text">Data Shelter BTS</span>
                         </a>
                     </li>
                     <li>
@@ -189,7 +189,7 @@
                     </li>
                     <center><li class="nav-label">Pages</li></center>
                     <li>
-                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <a class="has-arrow" aria-expanded="false">
                             <i class="fal fa-sort-circle"></i><span class="nav-text">Other</span>
                         </a>
                         <ul aria-expanded="false">
