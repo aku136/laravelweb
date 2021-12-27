@@ -16,6 +16,7 @@
     "postcss": "^8.1.14"
   },
   "dependencies": {
+    "@coreui/icons": "^2.1.0",
     "@heroku/buildpack-registry": "^1.0.1",
     "async-file": "^2.0.2",
     "cli-ux": "^6.0.6",
