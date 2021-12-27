@@ -8,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> @yield('title') Measuring BTS</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('style/images/favicon.png') }}">
-    <link rel="stylesheet" href="{{ asset('style/plugins/pg-calendar/css/pignose.calendar.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('style/plugins/chartist/css/chartist.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('style/css/style.css') }}" >
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('style/images/favicon.png') }}">
+    <link rel="stylesheet" href="{{ secure_asset('style/plugins/pg-calendar/css/pignose.calendar.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('style/plugins/chartist/css/chartist.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('style/css/style.css') }}" >
 
     {{-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css"> --}}
@@ -25,10 +25,10 @@
         <div class="nav-header">
             <div class="brand-logo">
                 <a href="index.html">
-                    <b class="logo-abbr"><img src="{{asset('style/images/favicon.png')}}" alt=""> </b>
-                    <!-- <span class="logo-compact"><img src="{{asset('style/images/logo-compact.png')}}" alt=""></span> -->
+                    <b class="logo-abbr"><img src="{{secure_asset('style/images/favicon.png')}}" alt=""> </b>
+                    <!-- <span class="logo-compact"><img src="{{secure_asset('style/images/logo-compact.png')}}" alt=""></span> -->
                     <span class="brand-title">
-                        <img src="{{asset('style/images/logo-text.png')}}" alt="" width="150" height="50" style="display:block; margin:auto">
+                        <img src="{{secure_asset('style/images/logo-text.png')}}" alt="" width="150" height="50" style="display:block; margin:auto">
                     </span>
                 </a>
             </div>
@@ -136,7 +136,7 @@
                         <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
-                                <img src="{{asset('style/images/user/1.png')}}" height="40" width="40" alt="">
+                                <img src="{{secure_asset('style/images/user/1.png')}}" height="40" width="40" alt="">
                             </div>
                             <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-body">
@@ -220,30 +220,30 @@
     <!--**********************************
         Scripts
     ***********************************-->
-    <script src="{{asset('style/plugins/common/common.min.js')}}"></script>
-    <script src="{{asset('style/js/custom.min.js')}}"></script>
-    <script src="{{asset('style/js/settings.js')}}"></script>
-    <script src="{{asset('style/js/gleek.js')}}"></script>
-    <script src="{{asset('style/js/styleSwitcher.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/common/common.min.js')}}"></script>
+    <script src="{{secure_asset('style/js/custom.min.js')}}"></script>
+    <script src="{{secure_asset('style/js/settings.js')}}"></script>
+    <script src="{{secure_asset('style/js/gleek.js')}}"></script>
+    <script src="{{secure_asset('style/js/styleSwitcher.js')}}"></script>
     <!-- Chartjs -->
     {{-- <script src="{{asset('style/plugins/chart.js/Chart.bundle.min.js')}}"></script> --}}
     <!-- Circle progress -->
-    <script src="{{asset('style/plugins/circle-progress/circle-progress.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/circle-progress/circle-progress.min.js')}}"></script>
     <!-- Datamap -->
-    <script src="{{asset('style/plugins/d3v3/index.js')}}"></script>
-    <script src="{{asset('style/plugins/topojson/topojson.min.js')}}"></script>
-    <script src="{{asset('style/plugins/datamaps/datamaps.world.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/d3v3/index.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/topojson/topojson.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/datamaps/datamaps.world.min.js')}}"></script>
     <!-- Morrisjs -->
-    <script src="{{asset('style/plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{asset('style/plugins/morris/morris.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/morris/morris.min.js')}}"></script>
     <!-- Pignose Calender -->
-    <script src="{{asset('style/plugins/moment/moment.min.js')}}"></script>
-    <script src="{{asset('style/plugins/pg-calendar/js/pignose.calendar.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/moment/moment.min.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/pg-calendar/js/pignose.calendar.min.js')}}"></script>
     <!-- ChartistJS -->
     {{-- <script src="{{asset('style/plugins/chartist/js/chartist.min.js')}}"></script>
     <script src="{{asset('style/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js')}}"></script> --}}
 
-    <script src="{{asset('style/js/dashboard/dashboard-1.js')}}"></script>
+    <script src="{{secure_asset('style/js/dashboard/dashboard-1.js')}}"></script>
 
     <script type="text/javascript">
        $(document).ready( function () {

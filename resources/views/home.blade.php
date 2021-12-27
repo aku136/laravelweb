@@ -181,7 +181,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="{{asset('style/images/users/8.jpg')}}" class="rounded-circle" alt="">
+                            <img src="{{secure_asset('style/images/users/8.jpg')}}" class="rounded-circle" alt="">
                             <h5 class="mt-3 mb-1">Fanny</h5>
                             <p class="m-0">Siswa</p>
                             <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
@@ -193,7 +193,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="{{asset('style/images/users/5.jpg')}}" class="rounded-circle" alt="">
+                            <img src="{{secure_asset('style/images/users/5.jpg')}}" class="rounded-circle" alt="">
                             <h5 class="mt-3 mb-1">Wafiq</h5>
                             <p class="m-0">Siswa</p>
                             <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
@@ -205,7 +205,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="{{asset('style/images/users/7.jpg')}}" class="rounded-circle" alt="">
+                            <img src="{{secure_asset('style/images/users/7.jpg')}}" class="rounded-circle" alt="">
                             <h5 class="mt-3 mb-1">Azizah</h5>
                             <p class="m-0">Siswa</p>
                             <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
@@ -245,7 +245,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><img src="{{asset('style/images/avatar/1.jpg')}}" class=" rounded-circle mr-3" alt="">Fanny</td>
+                                            <td><img src="{{secure_asset('style/images/avatar/1.jpg')}}" class=" rounded-circle mr-3" alt="">Fanny</td>
                                             <td>iPhone X</td>
                                             <td>
                                                 <span>United States</span>
@@ -264,7 +264,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="{{asset('style/images/avatar/2.jpg')}}" class=" rounded-circle mr-3" alt="">Wafiq</td>
+                                            <td><img src="{{secure_asset('style/images/avatar/2.jpg')}}" class=" rounded-circle mr-3" alt="">Wafiq</td>
                                             <td>Pixel 2</td>
                                             <td><span>Canada</span></td>
                                             <td>
@@ -281,7 +281,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="{{asset('style/images/avatar/3.jpg')}}" class=" rounded-circle mr-3" alt="">Azizah</td>
+                                            <td><img src="{{secure_asset('style/images/avatar/3.jpg')}}" class=" rounded-circle mr-3" alt="">Azizah</td>
                                             <td>OnePlus</td>
                                             <td><span>Germany</span></td>
                                             <td>
