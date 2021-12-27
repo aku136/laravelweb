@@ -51,34 +51,54 @@
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">1 New Messages</span>  
+                                    <span class="">3 New Messages</span>  
                                     <a href="javascript:void()" class="d-inline-block">
-                                        <span class="badge badge-pill gradient-1">1</span>
+                                        <span class="badge badge-pill gradient-1">3</span>
                                     </a>
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <i class="notification-unread">
+                                        <li class="notification-unread">
                                             <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="{{secure_asset("style/images/avatar/1.jpg")}}" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Fanny</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
                                                     <div class="notification-text">Hi fanny...</div>
                                                 </div>
                                             </a>
-                                        </i>
+                                        </li>
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Fanny</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi fanny...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-unread">
+                                            <a href="javascript:void()">
+                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Fanny</div>
+                                                    <div class="notification-timestamp">08 Hours ago</div>
+                                                    <div class="notification-text">Hi fanny...</div>
+                                                </div>
+                                            </a>
+                                        </li>
                                     </ul>   
                                 </div>
                             </div>
                         </li>
                         <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
-                            <i class="far fa-bell"></i>
-                                <span class="badge badge-pill gradient-2">1</span>
+                                <i class="far fa-bell"></i>
+                                <span class="badge badge-pill gradient-2">3</span>
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">1 New Notifications</span>  
+                                    <span class="">3 New Notifications</span>  
                                     <a href="javascript:void()" class="d-inline-block">
                                         <span class="badge badge-pill gradient-2">5</span>
                                     </a>
@@ -91,6 +111,24 @@
                                                 <div class="notification-content">
                                                     <h6 class="notification-heading">Acara 1</h6>
                                                     <span class="notification-text">Within next 5 days</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Acara 2</h6>
+                                                    <span class="notification-text">One hour ago</span> 
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
+                                                <div class="notification-content">
+                                                    <h6 class="notification-heading">Acara 3</h6>
+                                                    <span class="notification-text">One hour ago</span>
                                                 </div>
                                             </a>
                                         </li>
