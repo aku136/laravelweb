@@ -188,6 +188,11 @@
                         </a>
                     </li>
                     <li>
+                        <a class="has-arrow" href="" aria-expanded="false">
+                            <i class="fal fa-sort-circle"></i><span class="nav-text">Data Realtime BTS</span>
+                        </a>
+                    </li>
+                    <li>
                         <a class="has-arrow" aria-expanded="false">
                             <i class="fal fa-sort-circle"></i><span class="nav-text">Other</span>
                         </a>
