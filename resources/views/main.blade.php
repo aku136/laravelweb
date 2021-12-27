@@ -20,9 +20,6 @@
 	{{-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css"> --}}
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
 
 </head>
 <body>
@@ -177,23 +174,23 @@
                     <center><li class="nav-label">Menu</li></center>
                     <li>
                         <a class="has-arrow" href="{{url("home")}}" aria-expanded="false">
-                            <i class="fas fa-home"></i><span class="nav-text">Dashboard</span>
+                            <i class="fas fa-home menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a class="has-arrow" href="{{url("shelter")}}" aria-expanded="false">
-                            <i class="icon-location-pin menu-icon"></i><span class="nav-text">Data Shelter BTS</span>
+                            <i class="fa fa-map-marker menu-icon" aria-hidden="true"></i><span class="nav-text">Data Shelter BTS</span>
                         </a>
                     </li>
                     <li>
                         <a class="has-arrow" href="{{url("realtime")}}" aria-expanded="false">
-                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Data Realtime BTS</span>
+                            <i class="fas fa-tachometer-alt menu-icon"></i><span class="nav-text">Data Realtime BTS</span>
                         </a>
                     </li>
                     <center><li class="nav-label">Pages</li></center>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Other</span>
+                            <i class="fa-solid fa-notebook menu-icon"></i><span class="nav-text">Other</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="{{url("logout")}}">Logout</a></li>
