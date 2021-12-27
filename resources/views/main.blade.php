@@ -201,12 +201,12 @@
                     <li>
                         <a class="has-arrow" aria-expanded="false">
                             <i class="fal fa-sort-circle"></i><span class="nav-text">Other</span>
+                            <ul aria-expanded="false">
+                                <li><a href="{{url("logout")}}">Logout</a></li>
+                                <li><a href="{{url("register")}}">Register</a></li>
+                                <li><a href="{{url("lock")}}">Lock Screen</a></li>
+                            </ul>
                         </a>
-                        <ul aria-expanded="false">
-                            <li><a href="{{url("logout")}}">Logout</a></li>
-                            <li><a href="{{url("register")}}">Register</a></li>
-                            <li><a href="{{url("lock")}}">Lock Screen</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
