@@ -173,7 +173,7 @@
                     <center><li class="nav-label">Menu</li></center>
                     <li>
                         <a class="has-arrow" href="{{url("home")}}" aria-expanded="false">
-                            <i class="icon-home menu-icon"></i><span class="nav-text">Dashboard</span>
+                            <i class="fas fa-home"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li>
