@@ -187,6 +187,11 @@
                             <i class="fal fa-tachometer-alt-slowest"></i><span class="nav-text">Data Realtime BTS</span>
                         </a>
                     </li>
+                    <li>
+                        <a class="has-arrow" href="{{url("realtime")}}" aria-expanded="false">
+                            <i class="fal fa-tachometer-alt-slowest"></i><span class="nav-text">Data Realtime BTS</span>
+                        </a>
+                    </li>
                     <center><li class="nav-label">Pages</li></center>
                     <li>
                         <a class="has-arrow" aria-expanded="false">
