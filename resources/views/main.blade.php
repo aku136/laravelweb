@@ -179,12 +179,7 @@
                     </li>
                     <li>
                         <a class="has-arrow" href="{{url("shelter")}}" aria-expanded="false">
-                            <i class="fal fa-map-marker-alt"></i><span class="nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="{{url("shelter")}}" aria-expanded="false">
-                            <i class="fal fa-map-marker-alt"></i><span class="nav-text">Data Shelter BTS</span>
+                            <i class="fal fa-map-marked-alt"></i><span class="nav-text">Data Shelter BTS</span>
                         </a>
                     </li>
                     <li>
