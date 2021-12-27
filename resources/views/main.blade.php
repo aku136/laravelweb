@@ -189,7 +189,7 @@
                     </li>
                     <li>
                         <a class="has-arrow" href="{{url("realtime")}}" aria-expanded="false">
-                            <i class="fal fa-swatchbook"></i><span class="nav-text">Other</span>
+                            <i class="fal fa-swatchbook"></i><span class="nav-text"> Other</span>
                         </a>
                     </li>
                     <li>
