@@ -188,19 +188,14 @@
                         </a>
                     </li>
                     <li>
-                        <a class="has-arrow" href="{{url("realtime")}}" aria-expanded="false">
+                        <a class="has-arrow" href="" aria-expanded="true">
                             <i class="fal fa-box-open"></i><span class="nav-text">Other</span>
                         </a>
-                    </li>
-                    <li>
-                        <a class="has-arrow" aria-expanded="false">
-                            <i class="fal fa-sort-circle"></i><span class="nav-text">Other</span>
-                        </a>
-                        {{-- <ul aria-expanded="false">
+                        <ul aria-expanded="false">
                             <li><a href="{{url("logout")}}">Logout</a></li>
                             <li><a href="{{url("register")}}">Register</a></li>
                             <li><a href="{{url("lock")}}">Lock Screen</a></li>
-                        </ul> --}}
+                        </ul>
                     </li>
                 </ul>
             </div>
