@@ -51,16 +51,16 @@
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu">
                                 <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">3 New Messages</span>  
+                                    <span class="">1 New Messages</span>  
                                     <a href="javascript:void()" class="d-inline-block">
-                                        <span class="badge badge-pill gradient-1">3</span>
+                                        <span class="badge badge-pill gradient-1">1</span>
                                     </a>
                                 </div>
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <i class="fal fa-bell-unread">
+                                        <i class="notification-unread">
                                             <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="images/avatar/1.jpg" alt="">
+                                                <img class="float-left mr-3 avatar-img" src="{{secure_asset("style/images/avatar/1.jpg")}}" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">Fanny</div>
                                                     <div class="notification-timestamp">08 Hours ago</div>
@@ -73,7 +73,7 @@
                             </div>
                         </li>
                         <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
-                                <i class="mdi mdi-bell-outline"></i>
+                            <i class="far fa-bell"></i>
                                 <span class="badge badge-pill gradient-2">3</span>
                             </a>
                             <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
