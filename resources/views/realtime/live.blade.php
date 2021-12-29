@@ -20,10 +20,10 @@
             <b>Info: </b>Menampilkan Data Live Dari Arduino
         </div>
         <nav class="navbar navbar-light" style="background-color: #49809a;">
-            <h4><a class="text-white"><strong>DATA ARDUINO</strong></a></h4>
+            <h5><a class="text-white"><strong>DATA ARDUINO</strong></a></h5>
             <div class="card-header">
                 <div class="pull-right">
-                    <a href="{{url('realtime')}}" class="btn btn-warning btn-sm">
+                    <a href="{{url('realtime')}}" class="btn btn-danger btn-sm">
                         <i class="fa fa-undo"></i> Back
                     </a>
                     <a href="{{url('realtime/live')}}" type="submit" onclick="live.location.reload(true)" class="btn btn-success btn-sm">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </nav>
-        <div class="content mt-4">
+        <div class="content mt-3">
             <div class="animated fadeIn">
                 @foreach ($collect as $item)
                 <div class="row g-5 mt-3">

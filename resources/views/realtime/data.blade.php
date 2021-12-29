@@ -21,7 +21,7 @@
             <b>Info: </b>Menampilkan Laporan Data Kondisi BTS Realtime (data berikut dikirimkan langsung dari shelter yang bersangkutan)
         </div>
         <nav class="navbar navbar-light" style="background-color: #49809a;">
-            <h4><a class="text-white"><strong>KELOLA DATA DARI YANG TERBARU</strong></a></h4>
+            <h5><a class="text-white"><strong>KELOLA DATA DARI YANG TERBARU</strong></a></h5>
             <div class="card-header">
                 <div class="pull-right">
                     <a href="{{url('realtime/live')}}" class="btn btn-danger btn-sm">
@@ -35,36 +35,45 @@
         </nav>
         <div class="content mt-3"> 
             <div class="animated fadeIn"> 
-                <div class="card">
-                    <table id="data" class="table table-striped table-bordered">
-                        <thead style="background-color: #49809a;">
-                            <tr>
-                                <th  class="text-white">No.</th>
-                                {{-- <th  class="text-white">Nama Shelter BTS</th> --}}
-                                <th  class="text-white">Tegangan AC</th>
-                                <th  class="text-white">Arus AC</th>
-                                <th  class="text-white">Tegangan DC</th>
-                                <th  class="text-white">Arus DC</th>
-                                {{-- <th  class="text-white">Pintu</th> --}}
-                                <th  class="text-white">Data diterima</th>
-                                <th  class="text-white">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($collection as $item)
-                            <tr>
-                                <td>{{$loop->iteration }}</td>
-                                <td>{{$item['voltageac']}} V</td>
-                                <td>{{$item['currentac']/1000}} A</td>
-                                <td>{{$item['voltagedc']}} V</td>
-                                <td>{{$item['currentdc']/1000}} A</td>
-                                <td>{{date('l, d F Y H:i', strtotime($item['time']));}}</td>
-                                <td>x</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead style="background-color: #49809a;">
+                                            <tr>
+                                                <th  class="text-white">No.</th>
+                                                {{-- <th  class="text-white">Nama Shelter BTS</th> --}}
+                                                <th  class="text-white">Tegangan AC</th>
+                                                <th  class="text-white">Arus AC</th>
+                                                <th  class="text-white">Tegangan DC</th>
+                                                <th  class="text-white">Arus DC</th>
+                                                {{-- <th  class="text-white">Pintu</th> --}}
+                                                <th  class="text-white">Data diterima</th>
+                                                <th  class="text-white">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($collection as $item)
+                                            <tr>
+                                                <td>{{$loop->iteration }}</td>
+                                                <td>{{$item['voltageac']}} V</td>
+                                                <td>{{$item['currentac']/1000}} A</td>
+                                                <td>{{$item['voltagedc']}} V</td>
+                                                <td>{{$item['currentdc']/1000}} A</td>
+                                                <td>{{date('l, d F Y H:i', strtotime($item['time']));}}</td>
+                                                <td>x</td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            
                 <div class="card">
                     <div class="panel">
                         <div id="chartdata"></div>
