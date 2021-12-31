@@ -74,13 +74,22 @@
                     </div>
                 </div>
             
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-responsive">
-                             <div id="chartdata"></div>
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-responsive" style="display:block;
+                                border: 1px solid  #49809a;
+                                padding:12px;
+                                margin-top:5px;
+                                maxwidth:500px;
+                                height:420px;
+                                overflow:auto;">
+                                <div id="chartdata"></div></div> 
+                            </div>  
+                        </div>  
                     </div>
-                </div>
+                </div>             
             </div>    
         </div>
     </div>
@@ -116,6 +125,16 @@ legend: {
     align: 'right',
     verticalAlign: 'middle'
 },
+
+// auto: {
+//      display:block;
+//      border: 1px solid red;
+//      padding:5px;
+//      margin-top:5px;
+//      width:300px;
+//      height:50px;
+//      overflow:auto;
+// },
 
 plotOptions: {
         column: {
