@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Login Measuring BTS</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::asset('style/images/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('style/images/favicon.png') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link  rel="stylesheet" href="{{ URL::asset('style/css/style.css') }}">
+    <link  rel="stylesheet" href="{{ secure_asset('style/css/style.css') }}">
 </head>
 
 <body class="h-100">
@@ -20,7 +20,7 @@
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5">
-                                <center><img src="{{URL::asset('style/images/favicon.png') }}" height="150" width="150" alt=""></center><br>
+                                <center><img src="{{ secure_asset('style/images/favicon.png') }}" height="150" width="150" alt=""></center><br>
                                 @if(session('error'))
                                 <div class="alert alert-danger">
                                     <b>Opps!</b>{{session('error')}}
@@ -54,11 +54,11 @@
     <!--**********************************
         Scripts
     ***********************************-->
-    <script src="{{URL::asset('style/plugins/common/common.min.js')}}"></script>
-    <script src="{{URL::asset('style/js/custom.min.js')}}"></script>
-    <script src="{{URL::asset('style/js/settings.js')}}"></script>
-    <script src="{{URL::asset('style/js/gleek.js')}}"></script>
-    <script src="{{URL::asset('style/js/styleSwitcher.js')}}"></script>
+    <script src="{{secure_asset('style/plugins/common/common.min.js')}}"></script>
+    <script src="{{secure_asset('style/js/custom.min.js')}}"></script>
+    <script src="{{secure_asset('style/js/settings.js')}}"></script>
+    <script src="{{secure_asset('style/js/gleek.js')}}"></script>
+    <script src="{{secure_asset('style/js/styleSwitcher.js')}}"></script>
 </body>
 </html>
 
