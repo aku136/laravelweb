@@ -72,16 +72,19 @@
                             <div class="card-body">
                                 <h3 class="card-title" style="color: #49809a;"><strong>Macam-macam Tower BTS</strong></h3>
                             <hr>
-                                <p style="text-align: justify; font-family:Arial, Helvetica, sans-serif; color: #49809a;">
+                                
                                     <h4 style="color: #49809a;">1. Tower 4 kaki/ Rectangular Tower</h4>
+                                <p style="text-align: justify; font-family:Arial, Helvetica, sans-serif; color: #49809a;">
                                     Sesuai dengan namanya, tower ini berbentuk segi empat dan memiliki 4 kaki. Karena konstruksinya yang kokoh tower ini diharapkan memiliki kekuatan yang optimal untuk menghindari kemungkinan roboh. Tingginya kurang lebih 42 meter serta mampu mencakup banyak antena dan radio. Tipe tower ini biasanya digunakan oleh perusahaan telekomunikasi terkemuka seperti Telkom, Indosat, XL, dll mengingat harganya yang cukup fantastis yakni mencapai  650 juta-1 milyar rupiah.
                                 </p>
-                                <p style="text-align: justify; font-family:Arial, Helvetica, sans-serif; color: #49809a;">
+                                
                                     <h4 style="color: #49809a;">2. Tower 3 kaki/ Triangle Tower</h4>
+                                <p style="text-align: justify; font-family:Arial, Helvetica, sans-serif; color: #49809a;">
                                     Menara segitiga ini terdiri dari 3 pondasi tower. Tiap pondasi disusun dalam beberapa potongan yang berkisar 4-5 meter. Untuk menghindari hal-hal yang tidak diinginkan, misal roboh sebaiknya tower ini memakai besi yang berdiameter diatas 2 centimeter. Rata-rata tower jenis tingginya berkisar antara 40 meter dan maksimal 60 meter. Makin pendek tower tingkat keamanannya lebih tinggi. Kelebihan dari menara ini adalah komponennya lebih ringan sehingga menghemat biaya produksi dan pengangkutan.
                                 </p>
-                                <p style="text-align: justify; font-family:Arial, Helvetica, sans-serif; color: #49809a;">
+
                                     <h4 style="color: #49809a;">3. Tower 1 kaki/ Pole</h4>
+                                <p style="text-align: justify; font-family:Arial, Helvetica, sans-serif; color: #49809a;">
                                     Sebenarnya tower jenis ini tidak direkomendasikan karena banyak kekurangannya. Dalam penerimaan sinyal tergolong tidak stabil, mudah goyang, dan mengganggu sistem koneksi data yang berakibat pencarian di komputer terjadi secara terus-terusan. Tower ini ada 2 macam, yang pertama dibuat dengan pipa/plat baja tanpa spanner dengan diameter 40 cm hingga 50 cm dan rata-rata tingginya 42 meter. Kedua, tower yang dibuat dengan spanner yang menurut ahli pembuatannya tidak melebihi 20 meter.
                                 </p>
                             </div>

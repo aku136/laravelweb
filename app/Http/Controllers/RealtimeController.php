@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Charts\CovidChart;
 use App\Charts\RealtimeChart;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;

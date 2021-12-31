@@ -10,13 +10,9 @@
     <title> @yield('title') Measuring BTS</title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('style/images/favicon.png') }}">
-    <link rel="stylesheet" href="{{ asset('style/plugins/pg-calendar/css/pignose.calendar.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('style/plugins/chartist/css/chartist.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/css/style.css') }}" >
     <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
     {{-- <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('style/images/favicon.png') }}">
-    <link rel="stylesheet" href="{{ secure_asset('style/plugins/pg-calendar/css/pignose.calendar.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('style/plugins/chartist/css/chartist.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('style/css/style.css') }}" > --}}
     {{-- <link href="{{secure_asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
     
@@ -238,30 +234,6 @@
     <script src="{{secure_asset('style/js/settings.js')}}"></script>
     <script src="{{secure_asset('style/js/gleek.js')}}"></script>
     <script src="{{secure_asset('style/js/styleSwitcher.js')}}"></script> --}}
-    
-    <!-- Circle progress -->
-    <script src="{{asset('style/plugins/circle-progress/circle-progress.min.js')}}"></script>
-    {{-- <script src="{{secure_asset('style/plugins/circle-progress/circle-progress.min.js')}}"></script> --}}
-    
-    <!-- Datamap -->
-    <script src="{{asset('style/plugins/d3v3/index.js')}}"></script>
-    <script src="{{asset('style/plugins/topojson/topojson.min.js')}}"></script>
-    <script src="{{asset('style/plugins/datamaps/datamaps.world.min.js')}}"></script>
-    {{-- <script src="{{secure_asset('style/plugins/d3v3/index.js')}}"></script>
-    <script src="{{secure_asset('style/plugins/topojson/topojson.min.js')}}"></script>
-    <script src="{{secure_asset('style/plugins/datamaps/datamaps.world.min.js')}}"></script> --}}
-    
-    <!-- Morrisjs -->
-    <script src="{{asset('style/plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{asset('style/plugins/morris/morris.min.js')}}"></script>
-    {{-- <script src="{{secure_asset('style/plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{secure_asset('style/plugins/morris/morris.min.js')}}"></script> --}}
-    
-    <!-- Pignose Calender -->
-    <script src="{{asset('style/plugins/moment/moment.min.js')}}"></script>
-    <script src="{{asset('style/plugins/pg-calendar/js/pignose.calendar.min.js')}}"></script>
-    {{-- <script src="{{secure_asset('style/plugins/moment/moment.min.js')}}"></script>
-    <script src="{{secure_asset('style/plugins/pg-calendar/js/pignose.calendar.min.js')}}"></script> --}}
 
     <script src="{{asset('style/js/dashboard/dashboard-1.js')}}"></script>
     {{-- <script src="{{secure_asset('style/js/dashboard/dashboard-1.js')}}"></script> --}}

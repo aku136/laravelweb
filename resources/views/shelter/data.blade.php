@@ -49,12 +49,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
+                                    @foreach ($collection as $item)
                                     <tr>
-                                        <td>x</td>
-                                        <td>x</td>
-                                        <td>x</td>
-                                        <td>x</td>
+                                        <td>{{$loop->iteration }}</td>
+                                        <td>{{$item['nama']}} </td>
+                                        <td>{{$item['wilayah']}} </td>
+                                        <td>{{$item['koordinat']}} </td>
                                         <td class="text-center">
                                             <a href="x" class="btn btn-primary btn-sm">
                                                 <i class="fa fa-pencil"></i>
@@ -67,7 +67,7 @@
                                             </form>
                                         </td>
                                     </tr>
-                                 
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
