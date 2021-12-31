@@ -26,7 +26,7 @@
                                     <b>Opps!</b>{{session('error')}}
                                 </div>
                                 @endif
-                                <form class="mt-5 mb-5 login-input" action="{{route('actionlogin') }}" method="POST">
+                                <form class="mt-5 mb-5 login-input" action="" method="POST">
                                     @csrf
 
                                     <div class="form-group">
@@ -35,8 +35,12 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control" placeholder="Password" name="password" required>
                                     </div>
-                                    <button type="submit" class="btn mb-1 btn-primary">Login <span class="btn-icon-right"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                                    </button>
+
+                                    <a href="{{url('home')}}" class="btn mb-1 btn-primary">
+                                        Login<span class="btn-icon-right"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                                    </a>
+                                    {{-- <button type="submit" class="btn mb-1 btn-primary">Login <span class="btn-icon-right"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                                    </button> --}}
                                 </form>
                             </div>
                         </div>

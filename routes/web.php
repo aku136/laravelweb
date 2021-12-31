@@ -25,7 +25,11 @@ use App\Http\Controllers\HomeController;
 // Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
 Route::get('/', function () {
-    return view('home');
+    return view('login');
+});
+
+Route::get('login', function () {
+    return view('login');
 });
 
 Route::get('home', function () {
