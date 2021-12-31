@@ -168,6 +168,7 @@
         </div>
 
         <!-- bar samping kiri -->
+    <div class="col-xs-3">
         <div class="nk-sidebar">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
@@ -201,10 +202,16 @@
                 </ul>
             </div>
         </div>
+    </div>
+        
         
         <!-- isi -->
         @yield('breadcrumbs')
-        @yield('content')
+        
+        <div class="col-xs-9">
+            @yield('content')
+        </div>
+        
         
         <!-- bawah -->
         <div class="footer">

@@ -76,7 +76,7 @@
             
                 <div class="card">
                     <div class="card-body">
-                        <div class="chart-responsive">
+                        <div class="card-responsive">
                              <div id="chartdata"></div>
                         </div>
                     </div>
