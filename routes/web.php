@@ -19,19 +19,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
 // Route::get('/', [LoginController::class, 'login'])->name('login');
 // Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 // Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
-Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+// Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
-// Route::get('/', function () {
-//     return view('login');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
-// Route::get('home', function () {
-//     return view('home');
-// });
+Route::get('home', function () {
+    return view('home');
+});
 
 // Route::get('shelter', [ShelterController::class, 'data'])->name('shelter');
 Route::get('shelter', 'ShelterController@data');
