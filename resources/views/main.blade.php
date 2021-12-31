@@ -157,7 +157,7 @@
                                         <li>
                                             <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
                                         </li>
-                                        <li><a href="{{url('login')}}"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                        <li><a href="{{url('/')}}"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@
                             <i class="fal fa-box-open"></i><span class="nav-text">Other</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="{{url("login")}}">Logout</a></li>
+                            <li><a href="{{url("/")}}">Logout</a></li>
                             <li><a href="{{url("register")}}">Register</a></li>
                             <li><a href="{{url("lock")}}">Lock Screen</a></li>
                         </ul>
