@@ -75,8 +75,10 @@
                 </div>
             
                 <div class="card">
-                    <div class="panel">
-                        <div id="chartdata"></div>
+                    <div class="card-body">
+                        <div class="chart-responsive">
+                             <div id="chartdata"></div>
+                        </div>
                     </div>
                 </div>
             </div>    
