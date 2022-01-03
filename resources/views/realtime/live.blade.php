@@ -26,30 +26,37 @@
                     <a href="{{url('realtime')}}" class="btn btn-danger btn-sm">
                         <i class="fa fa-undo"></i> Back
                     </a>
-                    <a href="{{url('realtime/live')}}" type="submit" onclick="live.location.reload(true)" class="btn btn-success btn-sm">
+                    {{-- <a href="{{url('realtime/live')}}" type="submit" onclick="live.location.reload(true)" class="btn btn-success btn-sm">
                         <i class="fa fa-refresh"></i> Refresh
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </nav>
         <div class="content mt-3">
             <div class="animated fadeIn">
-                @foreach ($collect as $item)
+                <div class="card text-center">
+                    <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                        <a class="text-white"><strong>Hari Ini</strong></a>
+                    </div>
+                    <div class="card-body">
+                        <h1>
+                            <div id="update"></div>
+                        </h1>
+                    </div>
+                </div>
                 <div class="row g-5 mt-3">
                     <div class="col-md-3">
                         <div class="card text-center">
-                            
                             <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
                                 <a class="text-white"><strong>Voltage AC</strong></a>
                             </div>
                             <div class="card-body">
                                 <h1>
-                                    <div>{{$item['voltageac']}} V</div>
+                                    <div id="voltageac"> V</div>
                                 </h1>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="card text-center">
                             <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
@@ -57,7 +64,7 @@
                             </div>
                             <div class="card-body">
                                 <h1>
-                                    <div>{{$item['currentac']/1000}} A</div>
+                                    <div id="currentac"> A</div>
                                 </h1>
                             </div>
                         </div>
@@ -69,7 +76,7 @@
                             </div>
                             <div class="card-body">
                                 <h1>
-                                    <div>{{$item['voltagedc']}} V</div>
+                                    <div id="voltagedc"> V</div>
                                 </h1>
                             </div>
                         </div>
@@ -81,7 +88,7 @@
                             </div>
                             <div class="card-body">
                                 <h1>
-                                    <div>{{$item['currentdc']/1000}} A</div>
+                                    <div id="currentdc"> A</div>
                                 </h1>
                             </div>
                         </div>
@@ -89,17 +96,17 @@
                 </div>
                 <div class="card text-center">
                     <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
-                        <a class="text-white"><strong>Time</strong></a>
+                        <a class="text-white"><strong>Pengambilan Data</strong></a>
                     </div>
                     <div class="card-body">
                         <h1>
-                            <div>{{date('l, d F Y H:i', strtotime($item['time']));}}</div>
+                            <div id="time"></div>
                         </h1>
                     </div>
                 </div>
-                @endforeach
             </div>
         </div>
     </div>
+    <script src="{{asset("style/js/script.js")}}"></script>
 </div>
 @endsection

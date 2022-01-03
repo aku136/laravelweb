@@ -52,9 +52,7 @@ class RealtimeController extends Controller
     public function live()
     {
         $collect = collect(Http::get('https://kelompok2-gmedia.herokuapp.com/tampilbaru')->json());
-        // return response()->json($collection['values']);
         return view('realtime.live',['collect'=>$collect]);
-        // return view('realtime.live',['collection'=>$collection['values']]);
     }
 
 }
