@@ -78,14 +78,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="card-responsive" style="display:block;
-                                border: 1px solid  #49809a;
-                                padding:12px;
-                                margin-top:5px;
-                                maxwidth:500px;
-                                height:420px;
-                                overflow:auto;">
-                                <div id="chartdata"></div></div> 
+                                <div class="card-responsive" id="chartdata"> </div> 
                             </div>  
                         </div>  
                     </div>
@@ -99,82 +92,80 @@
 @section('bawah')
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script>
-    Highcharts.chart('chartdata', {
-
-title: {
-    text: 'Grafik Data'
-},
-
-subtitle: {
-    text: 'Source: smg@gmedia.co.id'
-},
-
-yAxis: {
+Highcharts.chart('chartdata', {
+    
+    chart: {
+        scrollablePlotArea: {
+            minWidth: 700,
+            scrollPositionX: 1
+        }
+    },
+    
     title: {
-        text: 'Data yang masuk'
-    }
-},
-
-xAxis: {
+        text: 'Grafik Data'
+    },
+    
+    subtitle: {
+        text: 'Source: smg@gmedia.co.id'
+    },
+    
+    yAxis: {
+        title: {
+            text: 'Data yang masuk'
+        }
+    },
+    
+    xAxis: {
         categories:{!! json_encode($coba)!!},
-        crosshair: true
+        labels: {
+            overflow: 'justify'
+        }
     },
-
-legend: {
-    layout: 'vertical',
-    align: 'right',
-    verticalAlign: 'middle'
-},
-
-// auto: {
-//      display:block;
-//      border: 1px solid red;
-//      padding:5px;
-//      margin-top:5px;
-//      width:300px;
-//      height:50px;
-//      overflow:auto;
-// },
-
-plotOptions: {
+        
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    
+    tooltip: {
+        split: true
+    },
+    
+    plotOptions: {
         column: {
-            pointPadding: 0.2,
-            borderWidth: 0
+                pointPadding: 0.2,
+                borderWidth: 0,
+    
+                states: {
+                    hover: {
+                        lineWidth: 5
+                    }
+                },
+    
+                marker: {
+                    enabled: false
+                },
+    
+                pointInterval: 3600000, // one hour
         }
     },
-
-series: [{
-        name: 'Volt AC',
-        data: {!! json_encode($voltac)!!}
-
-    }, {
-        name: 'Curr AC',
-        data: {!! json_encode($currac)!!}
-
-    }, {
-        name: 'Volt DC',
-        data: {!! json_encode($voltdc)!!}
-
-    }, {
-        name: 'Curr DC',
-        data: {!! json_encode($currdc)!!}
-
-    }],
-
-responsive: {
-    rules: [{
-        condition: {
-            maxWidth: 500
-        },
-        chartOptions: {
-            legend: {
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom'
-            }
+    
+    series: [
+        {
+            name: 'Volt AC',
+            data: {!! json_encode($voltac)!!}
+        }, {
+            name: 'Curr AC',
+            data: {!! json_encode($currac)!!}
+        }, {
+            name: 'Volt DC',
+            data: {!! json_encode($voltdc)!!}
+        }, {
+            name: 'Curr DC',
+            data: {!! json_encode($currdc)!!}
         }
-    }]
-}
+    ]
 
 });
 </script>
