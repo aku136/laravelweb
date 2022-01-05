@@ -11,7 +11,7 @@ function fetchData(){
         const date = new Date();
 
         const d = new Date(`${kel2.time}`)
-        const ok = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'long' }).format(d)
+        const ok = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'short' }).format(d)
        
         document.getElementById("update").innerHTML = `${date.toLocaleString()}`;
         document.getElementById("time").innerHTML = `${ok}`;

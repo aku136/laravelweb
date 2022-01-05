@@ -46,14 +46,39 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table id="coba" class="table table-striped table-bordered zero-configuration">
+                                    {{-- <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead style="background-color: #49809a;">
+                                            <tr>
+                                                <th class="text-white">Current AC (A)</th>
+                                                <th class="text-white">Voltage AC (V)</th>
+                                                <th class="text-white">Current DC (A)</th>
+                                                <th class="text-white">Voltage DC (V)</th>
+                                                <th class="text-white">Data Diteriima</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="data-ins">
+                                            
+                                        </tbody>
+                                        <tfoot style="background-color: #49809a;">
+                                            <tr>
+                                                <th class="text-white">Current AC (A)</th>
+                                                <th class="text-white">Voltage AC (V)</th>
+                                                <th class="text-white">Current DC (A)</th>
+                                                <th class="text-white">Voltage DC (V)</th>
+                                                <th class="text-white">Data Diteriima</th>
+                                            </tr>
+                                        </tfoot>
                                     </table>
                                     <script src="{{asset("style/js/realtime.js")}}"></script>
+                                    {{-- <script src="{{asset('style/plugins/tables/js/jquery.dataTables.min.js')}}"></script>
+                                    <script src="{{asset('style/plugins/tables/js/datatable/dataTables.bootstrap4.min.js')}}"></script>
+                                    <script src="{{asset('style/plugins/tables/js/datatable-init/datatable-basic.min.js')}}"></script> --}}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
