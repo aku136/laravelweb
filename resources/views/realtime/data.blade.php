@@ -1,177 +1,42 @@
-@extends('main')
-
-@section('title','Data Realtime')
-   
-@section('breadcrumbs')
-<div class="row page-titles mx-0">
-    <div class="col p-md-0">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="{{url('home')}}">Dashboard</a></li>
-            <li class="breadcrumb-item active">Kelola Data Realtime BTS</li>
-        </ol>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>coba datatables</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>
+</head>
+<body>
+    <div class="container mt-4">
+        <table id="myTable" class="tabel table-stripped">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>currentac</th>
+                    <th>voltageac</th>
+                    <th>currentdc</th>
+                    <th>voltagedc</th>
+                    <th>time</th>
+                </tr>
+            </thead>
+            <tbody id="data-ins"></tbody>
+        </table>
     </div>
-</div>
-@endsection
+    
 
-@section('content')
 
-<div class="content-body"> 
-    <div class="container-fluid mt-3">
-        <div class="alert alert-primary" role="alert">
-            <b>Info: </b>Menampilkan Laporan Data Kondisi BTS Realtime (data berikut dikirimkan langsung dari shelter yang bersangkutan)
-        </div>
-		<div class="d-flex justify-content-center">
-			<div class="spinner-border"
-				role="status" id="loading">
-				<span class="sr-only">Loading...</span>
-			</div>
-		</div>
-        <nav class="navbar navbar-light" style="background-color: #49809a;">
-            <h5><a class="text-white"><strong>KELOLA DATA DARI YANG TERBARU</strong></a></h5>
-            <div class="card-header">
-                <div class="pull-right">
-                    <a href="{{url('realtime/live')}}" class="btn btn-danger btn-sm">
-                        <i class="fa fa-television" aria-hidden="true"></i> Live Data
-                    </a>
-                    <a href="{{url('realtime')}}" type="submit" onclick="realtime.location.reload(true)" class="btn btn-success btn-sm">
-                        <i class="fa fa-refresh" aria-hidden="true"></i> Refresh
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <div class="content mt-3"> 
-            <div class="animated fadeIn"> 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    {{-- <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
-                                    <table class="table table-striped table-bordered zero-configuration">
-                                        <thead style="background-color: #49809a;">
-                                            <tr>
-                                                <th class="text-white">Current AC (A)</th>
-                                                <th class="text-white">Voltage AC (V)</th>
-                                                <th class="text-white">Current DC (A)</th>
-                                                <th class="text-white">Voltage DC (V)</th>
-                                                <th class="text-white">Data Diteriima</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="data-ins">
-                                            
-                                        </tbody>
-                                        <tfoot style="background-color: #49809a;">
-                                            <tr>
-                                                <th class="text-white">Current AC (A)</th>
-                                                <th class="text-white">Voltage AC (V)</th>
-                                                <th class="text-white">Current DC (A)</th>
-                                                <th class="text-white">Voltage DC (V)</th>
-                                                <th class="text-white">Data Diteriima</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                    <script src="{{asset("style/js/realtime.js")}}"></script>
-                                    {{-- <script src="{{asset('style/plugins/tables/js/jquery.dataTables.min.js')}}"></script>
-                                    <script src="{{asset('style/plugins/tables/js/datatable/dataTables.bootstrap4.min.js')}}"></script>
-                                    <script src="{{asset('style/plugins/tables/js/datatable-init/datatable-basic.min.js')}}"></script> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-responsive" id="chartdata"> </div> 
-                            </div>  
-                        </div>  
-                    </div>
-                </div>             
-            </div>    
-        </div>
-    </div>
-</div>
+    <script src="{{asset("style/js/realtime.js")}}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
 
-@endsection
-@section('bawah')
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script>
-Highcharts.chart('chartdata', {
-    
-    chart: {
-        scrollablePlotArea: {
-            minWidth: 700,
-            scrollPositionX: 1
-        }
-    },
-    
-    title: {
-        text: 'Grafik Data'
-    },
-    
-    subtitle: {
-        text: 'Source: smg@gmedia.co.id'
-    },
-    
-    yAxis: {
-        title: {
-            text: 'Data yang masuk'
-        }
-    },
-    
-    xAxis: {
-        categories:{!! json_encode($coba)!!},
-        labels: {
-            overflow: 'justify'
-        }
-    },
-        
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
-    },
-    
-    tooltip: {
-        split: true
-    },
-    
-    plotOptions: {
-        column: {
-                pointPadding: 0.2,
-                borderWidth: 0,
-    
-                states: {
-                    hover: {
-                        lineWidth: 5
-                    }
-                },
-    
-                marker: {
-                    enabled: false
-                },
-    
-                pointInterval: 3600000, // one hour
-        }
-    },
-    
-    series: [
-        {
-            name: 'Volt AC',
-            data: {!! json_encode($voltac)!!}
-        }, {
-            name: 'Curr AC',
-            data: {!! json_encode($currac)!!}
-        }, {
-            name: 'Volt DC',
-            data: {!! json_encode($voltdc)!!}
-        }, {
-            name: 'Curr DC',
-            data: {!! json_encode($currdc)!!}
-        }
-    ]
-
-});
-</script>
-@endsection
+    <script>
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        } );
+    </script>
+</body>
+</html>

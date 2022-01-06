@@ -11,7 +11,7 @@
 
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('style/images/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('style/css/style.css') }}" >
-    <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
+    {{-- <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
     {{-- <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('style/images/favicon.png') }}">
     <link rel="stylesheet" href="{{ secure_asset('style/css/style.css') }}" > --}}
     {{-- <link href="{{secure_asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
@@ -246,9 +246,9 @@
     {{-- <script src="{{secure_asset('style/js/dashboard/dashboard-1.js')}}"></script> --}}
 
     {{-- datatables --}}
-    <script src="{{asset('style/plugins/tables/js/jquery.dataTables.min.js')}}"></script>
+    {{-- <script src="{{asset('style/plugins/tables/js/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('style/plugins/tables/js/datatable/dataTables.bootstrap4.min.js')}}"></script>
-    <script src="{{asset('style/plugins/tables/js/datatable-init/datatable-basic.min.js')}}"></script>
+    <script src="{{asset('style/plugins/tables/js/datatable-init/datatable-basic.min.js')}}"></script> --}}
     
     {{-- chart --}}
     @yield('bawah')
