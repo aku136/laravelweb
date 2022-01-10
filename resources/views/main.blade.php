@@ -4,6 +4,7 @@
 
 <head>
 
+    {{-- <meta author = "fanny">  --}}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +12,8 @@
 
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('style/images/favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('style/css/style.css') }}" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
     {{-- <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
     {{-- <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('style/images/favicon.png') }}">
     <link rel="stylesheet" href="{{ secure_asset('style/css/style.css') }}" > --}}
@@ -44,7 +47,7 @@
                 </div>
                 <div class="header-right">
                     <ul class="clearfix">
-                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                        {{-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
                                 <i class="far fa-envelope"></i>
                                 <span class="badge badge-pill gradient-1">3</span>
                             </a>
@@ -90,8 +93,8 @@
                                     </ul>   
                                 </div>
                             </div>
-                        </li>
-                        <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
+                        </li> --}}
+                        {{-- <li class="icons dropdown"><a href="javascript:void(0)" data-toggle="dropdown">
                                 <i class="far fa-bell"></i>
                                 <span class="badge badge-pill gradient-2">3</span>
                             </a>
@@ -134,7 +137,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
+                        </li> --}}
                         <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
@@ -178,14 +181,24 @@
                             <i class="fal fa-home"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a class="has-arrow" href="{{url("shelter")}}" aria-expanded="false">
                             <i class="fal fa-map-marked-alt"></i><span class="nav-text">Data Shelter BTS</span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a class="has-arrow" href="{{url("realtime")}}" aria-expanded="false">
-                            <i class="fal fa-tachometer-alt-slowest"></i><span class="nav-text">Data Realtime BTS</span>
+                            <i class="fal fa-table"></i><span class="nav-text">Data Realtime Arduino</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="{{url("grafik")}}" aria-expanded="false">
+                            <i class="fal fa-analytics"></i><span class="nav-text">Chart Data Arduino</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="{{url("live")}}" aria-expanded="false">
+                            <i class="fal fa-tachometer-alt-slowest"></i><span class="nav-text">Live Data Arduino</span>
                         </a>
                     </li>
                     <center><li class="nav-label">Lainnya</li></center>
@@ -250,6 +263,36 @@
     <script src="{{asset('style/plugins/tables/js/datatable/dataTables.bootstrap4.min.js')}}"></script>
     <script src="{{asset('style/plugins/tables/js/datatable-init/datatable-basic.min.js')}}"></script> --}}
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#example").DataTable({
+                "ordering": true, // Set true agar bisa di sorting
+                "order": [[ 0, 'desc' ]], 
+                "ajax": {
+                    "url" : "https://kelompok2-gmedia.herokuapp.com/tampil",
+                    "dataSrc" : ""
+                },
+                "columns" : [
+
+                    // const d = new Date("time")
+                    // const ok = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'short' }).format(d)
+
+                    {"data" : "id"},
+                    {"data" : "currentac"},
+                    {"data" : "voltageac"},
+                    {"data" : "dayaac"},
+                    {"data" : "currentdc"},
+                    {"data" : "voltagedc"},
+                    {"data" : "dayadc"},
+                    {"data" : "time"}
+                ]
+            })
+        });
+        </script>
+
+
     {{-- chart --}}
     @yield('bawah')
 </body>

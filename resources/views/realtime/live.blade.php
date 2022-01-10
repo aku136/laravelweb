@@ -19,35 +19,56 @@
         <div class="alert alert-primary" role="alert">
             <b>Info: </b>Menampilkan Data Live Dari Arduino
         </div>
-        <nav class="navbar navbar-light" style="background-color: #49809a;">
-            <h5><a class="text-white"><strong>DATA ARDUINO</strong></a></h5>
+        <div class="card" style="background-color: #49809a;">
             <div class="card-header">
-                <div class="pull-right">
-                    <a href="{{url('realtime')}}" class="btn btn-danger btn-sm">
-                        <i class="fa fa-undo"></i> Back
-                    </a>
-                    {{-- <a href="{{url('realtime/live')}}" type="submit" onclick="live.location.reload(true)" class="btn btn-success btn-sm">
-                        <i class="fa fa-refresh"></i> Refresh
-                    </a> --}}
-                </div>
+                <h5 class="text-white" style="text-align:center;"><strong>DATA ARDUINO</strong></h5>
             </div>
-        </nav>
+        </div>
         <div class="content mt-3">
             <div class="animated fadeIn">
-                <div class="card text-center">
-                    <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
-                        <a class="text-white"><strong>Hari Ini</strong></a>
-                    </div>
-                    <div class="card-body">
-                        <h1>
-                            <div id="update"></div>
-                        </h1>
-                    </div>
-                </div>
                 <div class="row g-5 mt-3">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                                <a class="text-white"><strong>Hari Ini</strong></a>
+                            </div>
+                            <div class="card-body">
+                                <h1>
+                                    <div id="update"></div>
+                                </h1>
+                            </div>
+                        </div>   
+                    </div>
                     <div class="col-md-3">
                         <div class="card text-center">
                             <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                                <a class="text-white"><strong>Daya AC</strong></a>
+                            </div>
+                            <div class="card-body">
+                                <h1>
+                                    <div id="dayaac"></div>
+                                </h1>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                                <a class="text-white"><strong>Daya DC</strong></a>
+                            </div>
+                            <div class="card-body">
+                                <h1>
+                                    <div id="dayadc"></div>
+                                </h1>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                     
+                <div class="row g-5 mt-3">
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #49809a">
                                 <a class="text-white"><strong>Voltage AC</strong></a>
                             </div>
                             <div class="card-body">
@@ -59,7 +80,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card text-center">
-                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #49809a">
                                 <a class="text-white"><strong>Current AC</strong></a>
                             </div>
                             <div class="card-body">
@@ -71,7 +92,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card text-center">
-                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #49809a">
                                 <a class="text-white"><strong>Voltage DC</strong></a>
                             </div>
                             <div class="card-body">
@@ -83,7 +104,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card text-center">
-                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #FFA500">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #49809a">
                                 <a class="text-white"><strong>Current DC</strong></a>
                             </div>
                             <div class="card-body">
@@ -104,9 +125,35 @@
                         </h1>
                     </div>
                 </div>
+                <div class="row g-5 mt-3">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #49809a">
+                                <a class="text-white"><strong>Lama Aki Membackup AC</strong></a>
+                            </div>
+                            <div class="card-body">
+                                <h1>
+                                    <div id="akiac"></div>
+                                </h1>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-header" style="font-size: 20px; font-weight: bold; background-color: #49809a">
+                                <a class="text-white"><strong>Lama Aki Membackup DC</strong></a>
+                            </div>
+                            <div class="card-body">
+                                <h1>
+                                    <div id="akidc"></div>
+                                </h1>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="{{asset("style/js/script.js")}}"></script>
+    <script src="{{asset("style/js/live.js")}}"></script>
 </div>
 @endsection

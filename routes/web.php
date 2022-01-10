@@ -32,7 +32,7 @@ Route::get('home', function () {
     return view('home');
 });
 
-// Route::get('shelter', [ShelterController::class, 'data'])->name('shelter');
+// routes shelter
 Route::get('shelter', 'ShelterController@data');
 Route::get('shelter/add', 'ShelterController@add');
 Route::post('shelter', 'ShelterController@addProcess');
@@ -40,6 +40,12 @@ Route::get('shelter/edit/{id}', 'ShelterController@edit');
 Route::patch('shelter/{id}', 'ShelterController@editProcess');
 Route::delete('shelter/{id}', 'ShelterController@delete');
 
+// routes profile
 Route::get('profile', 'ProfileController@data');
+
+// routes realtime
 Route::get('realtime', 'RealtimeController@data');
 Route::get('realtime/live', 'RealtimeController@live');
+
+Route::get('grafik','RealtimeController@chart');
+Route::get('live','RealtimeController@live');
