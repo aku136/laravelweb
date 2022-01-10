@@ -20,23 +20,21 @@
         <div class="alert alert-primary" role="alert">
             <b>Info: </b>Menampilkan Laporan Data Kondisi Berbentuk Chart
         </div>
-        <div class="card" style="background-color: #49809a;">
-            <div class="card-header">
-                <h5 class="text-white" style="text-align:center;"><strong>CHART DATA</strong></h5>
-            </div>
-        </div>
-        <div class="content mt-3"> 
-            <div class="animated fadeIn"> 
+        <div class="content mt-3">
+            <div class="animated fadeIn">
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
+                            <div class="card-header" style="background-color: #49809a;">
+                                <h5 class="text-white" style="text-align:center;"><strong>CHART DATA</strong></h5>
+                            </div>
                             <div class="card-body">
                                 <div class="card-responsive" id="chartdata"> </div> 
                             </div>  
-                        </div>  
+                        </div>
                     </div>
-                </div>             
-            </div>    
+                </div>
+            </div>
         </div>
     </div>
 </div>

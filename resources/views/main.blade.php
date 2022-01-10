@@ -265,36 +265,9 @@
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#example").DataTable({
-                "ordering": true, // Set true agar bisa di sorting
-                "order": [[ 0, 'desc' ]], 
-                "ajax": {
-                    "url" : "https://kelompok2-gmedia.herokuapp.com/tampil",
-                    "dataSrc" : ""
-                },
-                "columns" : [
 
-                    // const d = new Date("time")
-                    // const ok = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'short' }).format(d)
-
-                    {"data" : "id"},
-                    {"data" : "currentac"},
-                    {"data" : "voltageac"},
-                    {"data" : "dayaac"},
-                    {"data" : "currentdc"},
-                    {"data" : "voltagedc"},
-                    {"data" : "dayadc"},
-                    {"data" : "time"}
-                ]
-            })
-        });
-        </script>
-
-
-    {{-- chart --}}
     @yield('bawah')
+
 </body>
 
 </html>
