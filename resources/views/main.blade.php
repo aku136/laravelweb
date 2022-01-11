@@ -11,7 +11,8 @@
     <title> @yield('title') Measuring BTS</title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('style/images/favicon.png') }}">
-    <link rel="stylesheet" href="{{ asset('style/css/style.css') }}" >
+    <link rel="stylesheet" href="{{ asset('style/css/style.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
     {{-- <link href="{{asset('style/plugins/tables/css/datatable/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
@@ -256,6 +257,7 @@
     <script src="{{secure_asset('style/js/styleSwitcher.js')}}"></script> --}}
 
     <script src="{{asset('style/js/dashboard/dashboard-1.js')}}"></script>
+    <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
     {{-- <script src="{{secure_asset('style/js/dashboard/dashboard-1.js')}}"></script> --}}
 
     {{-- datatables --}}

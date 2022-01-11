@@ -37,7 +37,7 @@
                                                 <th class="text-white">Current AC (A)</th>
                                                 <th class="text-white">Voltage AC (V)</th>
                                                 <th class="text-white">Daya AC (W)</th>
-                                                <th class="text-white">Current DC (A)</th>
+                                                <th class="text-white">Current DC (mA)</th>
                                                 <th class="text-white">Voltage DC (V)</th>
                                                 <th class="text-white">Daya DC (W)</th>
                                                 <th class="text-white">Data Diteriima</th>
@@ -51,7 +51,7 @@
                                                 <th class="text-white">Current AC (A)</th>
                                                 <th class="text-white">Voltage AC (V)</th>
                                                 <th class="text-white">Daya AC (W)</th>
-                                                <th class="text-white">Current DC (A)</th>
+                                                <th class="text-white">Current DC (mA)</th>
                                                 <th class="text-white">Voltage DC (V)</th>
                                                 <th class="text-white">Daya DC (W)</th>
                                                 <th class="text-white">Data Diterima</th>
@@ -74,6 +74,7 @@
 @section('bawah')
 <script type="text/javascript">
     $(document).ready(function(){
+
         var table = $("#example").DataTable({
             "ordering": true, // Set true agar bisa di sorting
             "order": [[ 0, 'desc' ]], 
