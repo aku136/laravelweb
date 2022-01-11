@@ -45,7 +45,5 @@ Route::get('profile', 'ProfileController@data');
 
 // routes realtime
 Route::get('realtime', 'RealtimeController@data');
-Route::get('realtime/live', 'RealtimeController@live');
-
 Route::get('grafik','RealtimeController@chart');
 Route::get('live','RealtimeController@live');
