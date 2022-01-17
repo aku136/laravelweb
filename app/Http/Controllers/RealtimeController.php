@@ -20,34 +20,35 @@ class RealtimeController extends Controller
 
     public function chart()
     {
-        $collectionchart = collect(Http::get('https://kelompok2-gmedia.herokuapp.com/tampil')->json());
+        // $collectionchart = collect(Http::get('https://kelompok2-gmedia.herokuapp.com/tampil')->json());
         
-        $coba = [];
-        foreach ($collectionchart as $item){
-            $coba[] = $item['id'];
-        }
+        // $coba = [];
+        // foreach ($collectionchart as $item){
+        //     $coba[] = $item['id'];
+        // }
 
-        $currac = [];
-        foreach ($collectionchart as $item){
-            $currac[] = $item['currentac']/1000;
-        }
+        // $currac = [];
+        // foreach ($collectionchart as $item){
+        //     $currac[] = $item['currentac']/1000;
+        // }
 
-        $voltac = [];
-        foreach ($collectionchart as $item){
-            $voltac[] = $item['voltageac'];
-        }
+        // $voltac = [];
+        // foreach ($collectionchart as $item){
+        //     $voltac[] = $item['voltageac'];
+        // }
 
-        $currdc = [];
-        foreach ($collectionchart as $item){
-            $currdc[] = $item['currentdc']/1000;
-        }
+        // $currdc = [];
+        // foreach ($collectionchart as $item){
+        //     $currdc[] = $item['currentdc']/1000;
+        // }
 
-        $voltdc = [];
-        foreach ($collectionchart as $item){
-            $voltdc[] = $item['voltagedc'];
-        }
+        // $voltdc = [];
+        // foreach ($collectionchart as $item){
+        //     $voltdc[] = $item['voltagedc'];
+        // }
+        // ,['coba'=>$coba,'currac'=>$currac,'voltac'=>$voltac,'currdc'=>$currdc,'voltdc'=>$voltdc]
 
-        return view('realtime.chart',['coba'=>$coba,'currac'=>$currac,'voltac'=>$voltac,'currdc'=>$currdc,'voltdc'=>$voltdc]); 
+        return view('realtime.chart'); 
     }
 
 }

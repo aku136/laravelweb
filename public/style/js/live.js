@@ -15,13 +15,15 @@ function fetchData(){
 
         let numac = (`${((120/(((kel2.currentac/1000)*kel2.voltageac)/12))-(120/(((kel2.currentac/1000)*kel2.voltageac)/12))*20/100)*3600}`);
         var hoursac = Math.floor(numac/3600);
-        var minuteac = Math.floor(numac/60);
-        var secondac = Math.floor(numac%60);
+        var sisaminuteac = Math.floor(numac%3600);
+        var minuteac = Math.floor(sisaminuteac/60);
+        var secondac = Math.floor(sisaminuteac%60);
 
         let numdc = (`${((120/(((kel2.currentdc/1000)*kel2.voltagedc)/12))-(120/(((kel2.currentdc/1000)*kel2.voltagedc)/12))*20/100)*3600}`);
         var hoursdc = Math.floor(numdc/3600);
-        var minutedc = Math.floor(numdc/60);
-        var seconddc = Math.floor(numdc%60);
+        var sisaminutedc = Math.floor(numdc%3600);
+        var minutedc = Math.floor(sisaminutedc/60);
+        var seconddc = Math.floor(sisaminutedc%60);
 
         document.getElementById("akiac").innerHTML = hoursac + ":" + minuteac + ":" + secondac ;
         document.getElementById("akidc").innerHTML = hoursdc + ":" + minutedc + ":" + seconddc ;

@@ -97,7 +97,7 @@
 
         setInterval( function () {
               table.ajax.reload();
-        }, 1000 );
+        }, 3000 );
     });
 </script>
 @endsection

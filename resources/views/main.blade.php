@@ -151,16 +151,7 @@
                                         <li>
                                             <a href="{{url("profile")}}"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill gradient-1">3</div>
-                                            </a>
-                                        </li>
-                                        
                                         <hr class="my-2">
-                                        <li>
-                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
-                                        </li>
                                         <li><a href="{{url('/')}}"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
@@ -209,8 +200,6 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="{{url("/")}}">Logout</a></li>
-                            <li><a href="{{url("register")}}">Register</a></li>
-                            <li><a href="{{url("lock")}}">Lock Screen</a></li>
                         </ul>
                     </li>
                 </ul>
