@@ -40,7 +40,7 @@
                                                 <th class="text-white">Current DC (mA)</th>
                                                 <th class="text-white">Voltage DC (V)</th>
                                                 <th class="text-white">Daya DC (W)</th>
-                                                <th class="text-white">Data Diteriima</th>
+                                                <th class="text-white">Data Diterima</th>
                                                 {{-- <th class="text-white">Status</th>
                                                 <th class="text-white">Aksi</th> --}}
                                             </tr>
