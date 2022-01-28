@@ -45,7 +45,8 @@
                                         <input type="password" class="form-control" placeholder="Password" name="password" required>
                                     </div>
 
-                                    <button class="btn login-form__btn submit w-100"><a href="{{url('home')}}">Login</a></button>
+                                    <a href="{{url("home")}}"><button class="btn login-form__btn submit w-100">Login</button></a>
+                                    {{-- <button class="btn login-form__btn submit w-100"><a href="{{url('home')}}">Login</a></button> --}}
                                     {{-- <a href="{{url('home')}}" class="btn mb-1 btn-primary">
                                         Login<span class="btn-icon-right"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
                                     </a> --}}
