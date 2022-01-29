@@ -73,7 +73,7 @@
 
                 $.ajax({
 
-                    url: "https://kelompok2-gmedia.herokuapp.com/users",
+                    url: "http://localhost:3000/users/login",
                     type: "POST",
                     dataType: "JSON",
                     cache: false,
@@ -84,7 +84,7 @@
 
                     success:function(response){
 
-                        if (response.success) {
+                        if (response.status) {
 
                             Swal.fire({
                                 type: 'success',
@@ -95,12 +95,11 @@
                                 showConfirmButton: false
                             })
                                 .then (function() {
-                                    window.location.href = "#";
+                                    window.location.href = "/home";
                                 });
 
                         } else {
 
-                            console.log(response.success);
 
                             Swal.fire({
                                 type: 'error',
@@ -109,8 +108,6 @@
                             });
 
                         }
-
-                        console.log(response);
 
                     },
 
