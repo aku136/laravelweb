@@ -1,73 +1,138 @@
-<!DOCTYPE html>
-<html class="h-100" lang="en">
-
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Login Measuring BTS</title>
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('style/images/favicon.png') }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link  rel="stylesheet" href="{{ secure_asset('style/css/style.css') }}">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link  rel="stylesheet" href="{{ asset('style/css/style.css') }}">
+    <title>Login Akun</title>
 </head>
+<body>
 
-<body class="h-100">
-    <div id="preloader">
-        <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
-            </svg>
-        </div>
-    </div>
-    <div class="login-form-bg h-100">
-        <div class="container h-100">
-            <div class="row justify-content-center h-100">
-                <div class="col-xl-6">
-                    <div class="form-input-content">
-                        <div class="card login-form mb-0">
-                            <div class="card-body pt-5">
-                                <center><img src="{{ secure_asset('style/images/favicon.png') }}" height="150" width="150" alt=""></center><br>
-                                @if(session('error'))
-                                <div class="alert alert-danger">
-                                    <b>Opps!</b>{{session('error')}}
-                                </div>
-                                @endif
-                                <form class="mt-5 mb-5 login-input" action="" method="POST">
-                                    @csrf
+<div class="container" style="margin-top: 50px">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <center>
+                        <img src="{{ asset('style/images/favicon.png') }}" height="150" width="150" alt=""><br><br>
+                        <strong>LOGIN</strong>
+                    </center>
+                    <hr>
 
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email" name="email" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password" name="password" required>
-                                    </div>
+                    <div class="form-group">
+                        <label>Alamat Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan Alamat Email">
+                    </div>
 
-                                    {{-- <a href="{{url("home")}}"><button class="btn login-form__btn submit w-100">Login</button></a> --}}
-                                    <button class="btn login-form__btn submit w-100"><a class="text-white" href="{{url('home')}}">Login</a></button>
-                                    {{-- <a href="{{url('home')}}" class="btn mb-1 btn-primary">
-                                        Login<span class="btn-icon-right"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                                    </a> --}}
-                                </form>
-                                <p class="mt-5 login-form__footer">Dont have account? <a href="{{url('register')}}" class="text-primary">Sign Up</a> now</p>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+                    </div>
+
+                    <button class="btn btn-login btn-block btn-primary">LOGIN</button>
+
+                    <div class="text-center" style="margin-top: 15px">
+                        Belum punya akun? <a href="{{url("register")}}">Silahkan Register</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+</div>
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <script src="{{secure_asset('style/plugins/common/common.min.js')}}"></script>
-    <script src="{{secure_asset('style/js/custom.min.js')}}"></script>
-    <script src="{{secure_asset('style/js/settings.js')}}"></script>
-    <script src="{{secure_asset('style/js/gleek.js')}}"></script>
-    <script src="{{secure_asset('style/js/styleSwitcher.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        $(".btn-login").click( function() {
+
+            var email = $("#email").val();
+            var password = $("#password").val();
+
+            if(email.length == "") {
+
+                Swal.fire({
+                    type: 'warning',
+                    title: 'Oops...',
+                    text: 'Alamat Email Wajib Diisi !'
+                });
+
+            } else if(password.length == "") {
+
+                Swal.fire({
+                    type: 'warning',
+                    title: 'Oops...',
+                    text: 'Password Wajib Diisi !'
+                });
+
+            } else {
+
+                $.ajax({
+
+                    url: "https://kelompok2-gmedia.herokuapp.com/users",
+                    type: "POST",
+                    dataType: "JSON",
+                    cache: false,
+                    data: {
+                        "email": email,
+                        "password": password
+                    },
+
+                    success:function(response){
+
+                        if (response.success) {
+
+                            Swal.fire({
+                                type: 'success',
+                                title: 'Login Berhasil!',
+                                text: 'Anda akan di arahkan dalam 3 Detik',
+                                timer: 3000,
+                                showCancelButton: false,
+                                showConfirmButton: false
+                            })
+                                .then (function() {
+                                    window.location.href = {{url('home')}};
+                                });
+
+                        } else {
+
+                            console.log(response.success);
+
+                            Swal.fire({
+                                type: 'error',
+                                title: 'Login Gagal!',
+                                text: 'silahkan coba lagi!'
+                            });
+
+                        }
+
+                        console.log(response);
+
+                    },
+
+                    error:function(response){
+
+                        Swal.fire({
+                            type: 'error',
+                            title: 'Opps!',
+                            text: 'server error!'
+                        });
+
+                        console.log(response);
+
+                    }
+
+                });
+
+            }
+
+        });
+
+    });
+</script>
+
 </body>
 </html>

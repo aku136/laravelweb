@@ -5,8 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FullCalenderController;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\RealtimeController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
