@@ -87,8 +87,8 @@
 
                 //ajax
                 $.ajax({
-
-                    url: "https://kelompok2-gmedia.herokuapp.com/users",
+                    // ubah aja http://localhost:3000/ ke heroku
+                    url: "http://localhost:3000/users/register",
                     type: "POST",
                     cache: false,
                     data: {
@@ -98,8 +98,8 @@
                     },
 
                     success:function(response){
-
-                        if (response.success) {
+                        console.log(response);
+                        if (response.status) {
 
                             Swal.fire({
                                 type: 'success',
@@ -121,7 +121,6 @@
 
                         }
 
-                        console.log(response);
 
                     },
 
