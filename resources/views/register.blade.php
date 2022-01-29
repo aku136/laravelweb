@@ -87,7 +87,7 @@
 
                 //ajax
                 $.ajax({
-                    url: "https://kelompok2-gmedia.herokuapp.com/users/register",
+                    url: "http://localhost:3000/users/register",
                     type: "POST",
                     cache: false,
                     data: {
@@ -97,7 +97,6 @@
                     },
 
                     success:function(response){
-                        console.log(response);
                         if (response.status) {
 
                             Swal.fire({
