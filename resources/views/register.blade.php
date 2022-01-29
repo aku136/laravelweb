@@ -35,9 +35,8 @@
                         <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
                     </div>
 
-                    <a href="{{url("/")}}"><button class="btn btn-register btn-block btn-primary">REGISTER</button></a>
-                    {{-- <button class="btn btn-register btn-block btn-primary">REGISTER</button> --}}
-
+                    <button class="btn btn-register btn-block btn-primary">REGISTER</button>
+                    
                     <div class="text-center" style="margin-top: 15px">
                         Sudah punya akun? <a href="{{url("/")}}">Silahkan Login</a>
                     </div>
@@ -88,8 +87,7 @@
 
                 //ajax
                 $.ajax({
-
-                    url: "https://kelompok2-gmedia.herokuapp.com/users",
+                    url: "https://kelompok2-gmedia.herokuapp.com/users/register",
                     type: "POST",
                     cache: false,
                     data: {
@@ -99,8 +97,8 @@
                     },
 
                     success:function(response){
-
-                        if (response.success) {
+                        console.log(response);
+                        if (response.status) {
 
                             Swal.fire({
                                 type: 'success',
@@ -122,7 +120,6 @@
 
                         }
 
-                        console.log(response);
 
                     },
 

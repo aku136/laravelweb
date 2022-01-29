@@ -29,8 +29,8 @@
                         <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
                     </div>
 
-                    {{-- <button class="btn btn-login btn-block btn-primary">LOGIN</button> --}}
-                    <a href="{{url('home')}}"><button class="btn btn-login btn-block btn-primary">LOGIN</button></a>
+                    <button class="btn btn-login btn-block btn-primary">LOGIN</button>
+                    {{-- <a href="{{url('home')}}"><button class="btn btn-login btn-block btn-primary">LOGIN</button></a> --}}
 
                     <div class="text-center" style="margin-top: 15px">
                         Belum punya akun? <a href="{{url("register")}}">Silahkan Register</a>
@@ -95,7 +95,7 @@
                                 showConfirmButton: false
                             })
                                 .then (function() {
-                                    window.location.href = {{url('home')}};
+                                    window.location.href = "#";
                                 });
 
                         } else {
