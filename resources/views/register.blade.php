@@ -35,8 +35,9 @@
                         <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
                     </div>
 
-                    <button class="btn btn-register btn-block btn-primary">REGISTER</button>
-                    
+                    <a href="{{url("/")}}"><button class="btn btn-register btn-block btn-primary">REGISTER</button></a>
+                    {{-- <button class="btn btn-register btn-block btn-primary">REGISTER</button> --}}
+
                     <div class="text-center" style="margin-top: 15px">
                         Sudah punya akun? <a href="{{url("/")}}">Silahkan Login</a>
                     </div>
