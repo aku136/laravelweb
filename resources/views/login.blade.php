@@ -73,7 +73,7 @@
 
                 $.ajax({
 
-                    url: "http://localhost:3000/users/login",
+                    url: "https://kelompok2-gmedia.herokuapp.com/users/login",
                     type: "POST",
                     dataType: "JSON",
                     cache: false,

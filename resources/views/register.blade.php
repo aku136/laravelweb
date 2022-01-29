@@ -87,7 +87,7 @@
 
                 //ajax
                 $.ajax({
-                    url: "http://localhost:3000/users/register",
+                    url: "https://kelompok2-gmedia.herokuapp.com/users/register",
                     type: "POST",
                     cache: false,
                     data: {
